@@ -1,5 +1,6 @@
 import css from '../styles/statistics.module.css'; 
 import { Notification } from './Notification'; 
+import PropTypes from 'prop-types'; 
 
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => { 
     return (
@@ -16,4 +17,12 @@ export const Statistics = ({ good, neutral, bad, total, positivePercentage }) =>
                 <Notification message="There is no feedback"></Notification>
             }
         </>)
+}
+
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired, 
+    positivePercentage: PropTypes.number.isRequired
 }
