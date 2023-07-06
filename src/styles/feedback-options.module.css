@@ -1,0 +1,27 @@
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-basis: calc((100% - 40px) - 40px);
+}
+
+.button {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(40, 91, 91);
+  color: whitesmoke;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: 200ms linear background-color, 100ms linear outline;
+  text-transform: capitalize;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(30, 112, 183, 0.818);
+  cursor: pointer;
+}
+
+.button:active {
+  outline: 3px solid rgba(142, 24, 151, 0.696);
+}

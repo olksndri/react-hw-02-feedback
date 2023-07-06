@@ -1,0 +1,16 @@
+body {
+  padding: 40px;
+}
+
+.feedback-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  outline: 4px solid rgb(40, 91, 91);
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
